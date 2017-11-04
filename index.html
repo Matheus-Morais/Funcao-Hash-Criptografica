@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<title>PARTE 2: Prática</title>
+</head>
+<body style="
+margin: 0 auto;
+padding: 2%;
+font-size: 1em;">
+<h1>PARTE 2: Prática</h1>
+<form class="form-group" style="
+padding: 2%;
+float: left;
+position: relative;
+left:15%;">
+    <div style="
+    width: 40%; 
+    float: left; 
+    border-width:thin;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    padding: 2%;">
+        <label>Arquivo A</label>
+        <input type="file" class="form-control" id="arquivo">
+        <br>
+        <label>Hash Criptografado do arquivo A:</label>
+        <input id="hash" class="form-control" disabled>
+        <br>
+    </div>
+    <div style="
+    width: 40%; 
+    float: left; 
+    border-width:thin;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    padding: 2%;
+    position: relative;
+    left: 2%">
+        <label>Arquivo B</label>
+        <input type="file" class="form-control" id="arquivo2">
+        <br>
+        <label>Hash Criptografado do arquivo B:</label>
+        <input id="hash2" class="form-control" disabled>
+        <br>
+    </div>
+    <div style="
+    width: 40%; 
+    float: left; 
+    border-width:thin;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    padding: 2%;
+    position: relative;
+    left: 21%;
+    top: 21px;">
+        <label>Verificação se os dois hash são iguais:</label>
+        <br>
+        <input id="resultado" class="form-control" disabled>
+        <br>
+        <button type="submit" class="btn btn-success" id="calcular">Gerar Hash</button>
+        <button type="reset" class="btn btn-danger" id="resetar">Limpar Campos</button>
+    </div>
+</form>
+<script src="js/md5.js"></script>
+<script src="js/demo/demo.js"></script>
+</body>
+</html>
